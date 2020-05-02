@@ -3,14 +3,14 @@
 
   <div id="remoteVideosContainer"></div>
 
-  <!-- <table>
-    <thead>
+  <table>
+    <!-- <thead>
       <tr>
         <th>Stream</th>
         <th>1-way</th>
         <th>2-way</th>
       </tr>
-    </thead>
+    </thead> -->
     <tbody>
       <tr
         ng-repeat="stream in rtc.remoteStreams"
@@ -20,10 +20,10 @@
           <a>{{ stream.name }}</a>
         </td>
         <td ng-click="rtc.view(stream)"><a>View</a></td>
-        <td ng-click="rtc.call(stream)"><a>Call</a></td>
+        <!-- <td ng-click="rtc.call(stream)"><a>Call</a></td> -->
       </tr>
     </tbody>
-  </table> -->
+  </table>
 
   <li ng-click="rtc.loadData()" style="width: 240px;">
     <a href>Refresh</a>

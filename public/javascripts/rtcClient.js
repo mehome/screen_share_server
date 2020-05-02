@@ -53,9 +53,7 @@ var PeerManager = function () {
     };
     peer.pc.oniceconnectionstatechange = function (event) {
       switch (
-        (
-          event.srcElement || event.target // Chrome
-        ).iceConnectionState // Firefox
+        (event.srcElement || event.target).iceConnectionState // Chrome // Firefox
       ) {
         case "disconnected":
           remoteVideosContainer.removeChild(peer.remoteVideoEl);
