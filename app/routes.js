@@ -2,7 +2,7 @@ module.exports = function (app, streams) {
   // GET home
   var index = function (req, res) {
     res.render("index", {
-      title: "Project RTC",
+      title: "Android screen sharing",
       header: "Android screen sharing",
       username: "Username",
       share: "Share this link",
